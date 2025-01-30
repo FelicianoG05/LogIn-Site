@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #d6d6d6;
+    }
+    .login-container{
+        background-color: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        width: 320px;
+        text-align: center;
+    }
+    input[type = "text"], input[type = "password"]{
+        width: 93%;
+        padding: 12px;
+        margin: 8px 0;
+        border: 2px solid #979696;
+        border-radius: 5px;
+        outline: none;
+    }
+    button {
+        width: 100%;
+        padding: 12px;
+        background-color: #28a745;
+        box-shadow: 
+            4px 4px 8px rgba(40, 167, 69, 0.6),
+            -4px -4px 8px rgba(255, 255, 255, 0.3);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 5px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    button:active {
+        box-shadow: 
+            inset 4px 4px 8px rgba(0, 0, 0, 0.3),
+            inset -4px -4px 8px rgba(255, 255, 255, 0.3);
+        background-color: #1e7e34;
+        transform: scale(0.98);
+    }
+    button:hover{
+        background-color: #218838;
+    }
+</style>
+</head>
+<body>
+    <div class = "login-container">
+        <h2>Login</h2>
+        <form action="#">
+            <input type="text" placeholder="Email address" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+            <h2></h2>
+            <span>No Account?</span>
+            <a href="https://elms.sti.edu">Create Account</a>
+        </form>
+    </div>
+</body>
+</html>
